@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vela Athletics</title>
+  <meta name="description" content="Vela Athletics — AI-powered, hyper-personalized fitness training. Smart workout programming, nutrition tracking, and real coaching in one app." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    :root {
+      --bg: #17140F;
+      --surface: #120F0C;
+      --border: #3d3530;
+      --accent: #C95D11;
+      --text: #FFFFFF;
+      --text-secondary: #8a7a72;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 64px 24px 48px;
+    }
+    .hero img {
+      width: 220px;
+      max-width: 60vw;
+      height: auto;
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .hero h1 .flame {
+      background: linear-gradient(90deg, #C95D11, #D1731E, #F4AE3E);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero p.tagline {
+      margin-top: 16px;
+      font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+      color: var(--text-secondary);
+      max-width: 480px;
+    }
+    .badge {
+      margin-top: 28px;
+      display: inline-block;
+      padding: 10px 22px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Sections */
+    section { padding: 56px 0; }
+    section h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.02em;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 3px;
+      margin-top: 10px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, #C95D11, #F4AE3E);
+    }
+    section p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+    }
+    section p strong { color: var(--text); font-weight: 600; }
+
+    .features {
+      list-style: none;
+      margin-top: 24px;
+      display: grid;
+      gap: 14px;
+    }
+    .features li {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .features li span.title {
+      display: block;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .features li span.desc {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+    }
+
+    /* Contact */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+    .contact-card a.email {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 14px 32px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #C95D11, #D1731E, #F4AE3E);
+      color: #000000;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    .contact-card a.email:hover { opacity: 0.9; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 56px;
+      padding: 28px 24px;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <img src="logo.png" alt="Vela Athletics logo" />
+    <h1>Vela <span class="flame">Athletics</span></h1>
+    <p class="tagline">Personal training, reimagined. AI-powered coaching and elite human trainers — in one app.</p>
+    <span class="badge">Coming soon to the App Store</span>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>What is Vela?</h2>
+      <p>
+        <strong>Vela Athletics</strong> is a mobile fitness app that delivers hyper-personalized
+        training and nutrition guidance. Whether you train with our AI coach or connect with a
+        real personal trainer through the app, Vela builds your program around your goals,
+        your experience level, and your progress.
+      </p>
+      <ul class="features">
+        <li>
+          <span class="title">Personalized workout programs</span>
+          <span class="desc">Training plans tailored to your goals, equipment, and schedule — with in-app set-by-set logging, rest timers, and progress history.</span>
+        </li>
+        <li>
+          <span class="title">Real trainers, on your phone</span>
+          <span class="desc">Connect with a certified personal trainer for custom programming, video form feedback, goal setting, and scheduled check-ins.</span>
+        </li>
+        <li>
+          <span class="title">Nutrition tracking</span>
+          <span class="desc">Log meals, track calories and macros against your goals, and monitor water intake — all in one place.</span>
+        </li>
+        <li>
+          <span class="title">Progress that stays with you</span>
+          <span class="desc">Weight and body composition trends, workout streaks, personal records, and daily health stats.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <p>Questions, partnerships, or support — we'd love to hear from you.</p>
+        <a class="email" href="mailto:chris@velaathletics.app">chris@velaathletics.app</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Vela Athletics Inc. All rights reserved.
+  </footer>
+
+</body>
+</html>
